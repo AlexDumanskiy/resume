@@ -1,615 +1,654 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <title>Alexander Dumanskiy</title>
-  <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <style>body, html {
-  padding-top:2.5em;
-  margin:0;
-  background-color:#fafafa;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-.note {
-  display:block;
-  position: absolute;
-  top:10px;
-  left:10px;
+  <title>Maria Dumanskaya</title>
 
-  font-family: "Open Sans";
-  font-size: 0.6em;
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
 
-.new {
-  background-color: #81C784;
-
-  border: 1px solid #757575;
-  padding: 1px;
-  border-radius: 4px;
-
-}
-
-/* Header */
-
-header {
-  width:100%;
-  vertical-align: middle;
-  text-align: center;
- 
-}
-
-.header-content {
-  display: inline-block;
-}
-
-.pic {
-  margin: 0 auto;
-  margin-top:-2.5em;
   
-  border-radius:10em;
-  height:4em;
-  width:4em;
-  
-  border: 2px solid #e0e0e0;
-  transition : all 0.5s linear;
-  
+  <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	color: #333;
+	margin: 0 0 80px;
+	font-size: 15px;
 }
 
-@-webkit-keyframes wiggle {
-  0%   {
-    transform: rotate(0deg);
-  }
-  25%  {
-    transform: rotate(-30deg);
-  }
-  50%  {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+a {
+	color: #E32B46;
 }
 
-.pic:hover {
-  /*Webkit fix*/
-  -webkit-transform: translateZ(0);
-  
-  cursor:pointer;
-  
-  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+a:focus, a:hover {
+	color: #333;
+	text-decoration: none;
 }
 
-.header-text {
-  margin-top:0.5em;
-  margin-left:1em;
+strong {
+	font-size: smaller;
+	font-weight: 400;
+	color: #333;
 }
 
-header p {
-  text-align:center;
-  font-family: "Merriweather";
-  
-  margin:0;
-  
-  color: #212121;
+p {
+	line-height: 1.5;
+	margin: 0 0 .5em 0;
 }
 
-.first-name {
-   font-size: 1.05em;
+p + p {
+	margin-top: 10px;
 }
 
-.subtitle {
-  font-family: "Merriweather";
-  padding-top:.3em;
-  font-size:0.55em;
-  font-weight:500;
-  color: #424242;
+h1, h2, h3, h4 {
+	margin-top: 0;
+	font-weight: 300;
+	color: #555;
 }
 
-/* Information */
-
-.paper {
-  margin: 0 auto;
-  margin-bottom:1em;
-  
-  background-color:white;
-  width:60%;
-  
-  padding:0.5em 0 0.5em 0;
-  
-  border-top: 1px solid #e0e0e0;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 3px solid #e0e0e0;
-  border-radius:3px;
+section {
+	margin-top: 24px;
 }
 
-@media(max-width:992px) {
-  .paper {
-    width:80%;
-  }
+ul, ol {
+	padding-left: 21px;
 }
 
-/* Content Part */
-
-.content-wrapper {
-  padding-right:7.25%;
+li {
+	line-height: 1.8;
+	list-style: none;
 }
 
-.content {
-  display:table;
-  width:100%;
-  
-  padding-top:1.5em;
-  
-  /*border-top: 1px solid #eeeeee;*/
+li:before {
+	content: "\f052";
+	float: left;
+	font: 16px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
 }
 
-.content:last-child {
-  margin-bottom: 2em;
+blockquote {
+  border-left: 3px solid #e7e9ec;
+  font-size: 14px;
+  margin-bottom: 4px;
 }
 
-body > div > article > div > section:last-child {
-  padding-bottom:1.5em;
+em {
+	color: #666;
+	font-weight: 300;
+	font-style: normal;
 }
 
-.row {
-    display:table-row;
-}
-.row div {
-    display:table-cell;
+h4 span:first-child {
+	color: #333;
+	font-weight: 400;
 }
 
-.content-cat {
-  font-family: "Merriweather";
-  font-variant:small-caps;
-  font-weight:300;
-  letter-spacing: 1px;
-  
-  color: #212121;
-  
-  font-size:0.975em;
-  
-  text-align:center;
-  vertical-align:middle;
-
-  padding-left:6.66%;
-  width:30%;
+.container {
+	max-width: 750px;
+	padding: 0 30px;
 }
 
-.content-cat p {
-  font-size:0.55em;
-  font-weight:600;
-  
-  margin-bottom:0;
+.col-sm-6 {
+	margin-bottom: 10px;
 }
 
-.content-text {
-  border-left:1px solid #e0e0e0;
-  transition: border 0.66s ease-in;
+.col-sm-12 h4 {
+	margin-top: 12px;
 }
 
-.big-text {
-  vertical-align:top;
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
 }
 
-.content-text ul {
-  padding:0;
-  margin:0;
-  margin-top:0.15em;
-  
-  width:85%;
-  margin-left:1.5em;
+#header {
+	padding: 50px 0 25px;
 }
 
-.content-text ul:last-child {
-  margin-bottom:0.5em;
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
 }
 
-.content-text ul li {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  display:inline-block;
-  
+#content h3 {
+	color: #555;
+	font-size: 26px;
+	margin-top: -4px;
 }
 
-.content-text ul li:first-child {
-  width:35%;
-  
-  color: #424242;
-  
-  font-weight:600;
+#content aside {
+	text-align: right;
+	padding-right: 30px;
 }
 
-.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
-  text-decoration: none;
-  color: #0277bd;
+#profiles .network {
+	text-transform: capitalize;
 }
 
-.content-text ul li a:hover {
-  color:#4fc3f7;
+#work .position,
+#volunteer .position {
+	font-weight: 400;
+	margin-bottom: 8px;
 }
 
-.work-listing p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  color: #424242;
-  
-  margin-left:2em;
-  margin-top:0.45em;
-  margin-bottom: 0.45em;
+#education .area {
+	font-weight: 400;
 }
 
-div.content-text.work-listing.education-listing > p:nth-child(2) {
-  margin-top:0.25em;
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
 }
 
-.work-listing .highlight {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
-  
-  color: #424242;
-  
-  margin-left:3.25em;
-  
-  list-style-type: disc;
-  list-style-position: inside;
-  display: list-item;
-  
+#education .studyType {
+	margin-left: 25px;
 }
 
-.education-listing > .heading {
-  font-weight:600;
-  
-  margin-top:0.75em;
-  margin-left:2em;
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
 }
 
-.education-listing > .highlight {
-  margin-left:3.25em;
+#publications .website a:before {
+	content: attr(href);
 }
 
-.highlight {
-  transition: border .33s ease-in;
-}
-
-.profiles-listing ul li, .profiles-listing ul li:first-child {
-  width:32%;
-  font-weight: normal;
-}
-
-.work-content, .education-content {
-  padding-top: .75em;
-  page-break-inside: avoid;
-}
-
-section.content.education-content > div > div.content-cat {
-  vertical-align: top;
-}
-
-div.content-text.skills-listing > p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
-
-  margin-left: 2em;
-  margin-top: 0.45em;
-  margin-bottom: 0.45em;
-}
-
-div.content-text.skills-listing > p > {
-  color:#212121;
-}
-
-@media screen and (max-width: 600px) {
-  body, html {
-    padding-top: 30px;
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
   }
 
-  .paper {
-    width:95%;
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
   }
 
-  .row div {
-    display: block;
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
   }
 
-  .content-cat {
-    width: 100%;
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
   }
 
-  .content-text ul li {
-    width: 100%;
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
   }
 
-  .content-text ul li:first-child {
-    width: 100%;
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 28px;
   }
+
+	#header h2 {
+		font-size: 24px;
+  }
+
+	#content h3 {
+		font-size: 20px;
+  }
+
+	h4 {
+		font-size: 16px;
+  }
+
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+  }
+
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+  }
+
+	.strike-through span {
+		display: block;
+  }
+
+	#header {
+		padding: 30px 0 0;
+  }
+
+	#actions {
+		display: none;
+	}
+}
+
+@media print {
+	body {
+		font-size: 12px;
+  }
+
+	a[href]:after {
+		display: none;
+  }
+
+	h1 {
+		font-size: 24px;
+  }
+
+	#header h2 {
+		font-size: 18px;
+		margin-top: -8px;
+  }
+
+	h4 {
+		font-size: 13px;
+  }
+
+  #header {
+		padding: 0;
+	}
+
+	#content aside {
+		margin: 0 !important;
+	}
+
+	#content h3 {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	blockquote {
+		border: 0;
+		border-left: 3px solid #e7e9ec;
+		font-size: 12px;
+	}
+
+	li:before {
+		font: 10px Octicons;
+	}
+
+	.strike-through {
+		border-top-color: transparent;
+  }
+
+	.strike-through span + span {
+		font-size: 12px;
+  }
+
+	.col-sm-push-3 {
+    left: 25%;
+  }
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+	.col-sm-12 {
+	  width: 100%;
+  }
+
+	.col-sm-11 {
+	  width: 91.66666666666666%;
+  }
+
+	.col-sm-10 {
+	  width: 83.33333333333334%;
+  }
+
+	.col-sm-9 {
+	  width: 75%;
+  }
+
+	.col-sm-8 {
+	  width: 66.66666666666666%;
+  }
+
+	.col-sm-7 {
+	  width: 58.333333333333336%;
+  }
+
+	.col-sm-6 {
+	  width: 50%;
+  }
+
+	.col-sm-5 {
+	  width: 41.66666666666667%;
+  }
+
+	.col-sm-4 {
+	  width: 33.33333333333333%;
+  }
+
+	.col-sm-3 {
+	  width: 25%;
+  }
+
+	.col-sm-2 {
+	  width: 16.666666666666664%;
+  }
+
+	.col-sm-1 {
+	  width: 8.333333333333332%;
+  }
+}
+
+  </style>
   
-  .education-listing > .highlight {
-    margin-left: 30px;
-  }
-}
-</style>
-  <style media="print">
-body, html {
-  background-color: white;
-  padding-top: 1.5em;
-  font-size: 104%;
-}
-
-.paper {
-  width:100%;
-  border: 0;
-
-  padding-top: 0;
-}
-
-header p {
-  font-size: 1.3em;
-}
-
-.subtitle {
-  font-size: 0.7em;
-}
-
-.header-pic {
-  float:left;
-}
-
-.profiles {
-  display:none;
-}
-
-.content {
-  page-break-inside:avoid; 
-  page-break-after:auto;
-}
-
-.header-text {
-  float:left;
-  margin-top: -1.6em;
-}
-
-.content-wrapper > .content:first-child {
-  padding-top: 2em;
-}
-
-.content:last-child {
-  padding-bottom: 0;
-}
-
-.content-cat {
-  width:33%;
-  color:black;
-  text-align: left;
-}
-
-.content-cat p {
-  font-size:0.6em;
-  font-weight: 600;
-}
-
-header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
-  color:black;
-}
-
-.content-text.skills-listing > ul > li span, .subtitle {
-  color:#212121;
-}
-
-.content-text ul:last-child {
-  margin-bottom: 0.25em;
-}
-
-.content-text ul li:first-child {
-  width:50%;
-}
-
-.profiles-listing ul li:first-child {
-  width:32%;
-}
-
-div.content-text.skills-listing > ul > li {
-  width:33%;
-}
-
-.work-listing p {
-  margin-bottom: 0.1em;
-}
-
-div.content-text.skills-listing > ul > li > p {
-  margin-top: 0.4em;
-  margin-bottom: 0.5em;
-}
-
-div.content-text.skills-listing > ul > li {
-  padding-left: 1.5em;
-}
-
-div.content-text.skills-listing > ul > li:first-child {
-  padding-left: 2em;
-}
-
-.note {
-  display:none;
-}
-
-.content-text:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
-}
-
-.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.big-text {
-  padding-top: 0;
-}
-</style>
 </head>
 <body>
-  <div class="resume-wrapper">
-    <article class="paper">
-        <header>
-          <div class="header-content">
-            <div class="header-text">
-              <p>
-                Alexander Dumanskiy
-              </p>
-              <p class="subtitle">Engineering Manager</p>
+  <!-- HEADER -->
+  <header id="header">
+		<div class="container">
+			<div class="row">
+        <div class="col-sm-3">
+          <img src="" class="img-responsive img-circle pull-right" style="max-height: 88px">
+        </div>
+				<div class="col-sm-9">
+          <h1>Maria Dumanskaya</h1>
+          <h2>QA Engineer</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+
+  <!-- CONTENT: Re-arrange sections order if necessary -->
+  <div id="content" class="container">
+    <!-- Contact -->
+    
+
+
+  <section id="contact" class="row">
+    <aside class="col-sm-3"><h3>Contact</h3></aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <strong>Email</strong>
+            <div>
+              <a href="mailto:masha.dumanskaya@gmail.com">masha.dumanskaya@gmail.com</a>
             </div>
           </div>
-        </header>
-        <div class="content-wrapper">
-          <!-- CONTACT -->
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Contact
-              </div>
-              <div class="content-text">
-                  <ul>
-                    <li>Email</li>
-                    <li><a href="mailto:a.dumanskiy@hotmail.com">a.dumanskiy@hotmail.com</a></li>
-                  </ul>
-                  <ul>
-                    <li>Phone</li>
-                    <li>+79219145977</li>
-                  </ul>
-              </div>
-            </div>
-          </section>
-
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat">
-                    Location
-                  </div>
-                  <div class="content-text">
-                      <ul>
-                        <li>Region</li>
-                        <li>Russia</li>
-                      </ul>
-                  </div>
-                </div>
-              </section>
-
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Professional Skills Summary
-              </div>
-              <div class="content-text skills-listing">
-                  <p>
-                    <span class="name">
-                        <strong>
-                          Leadership:
-                        </strong>
-                    </span>
-                      Lead and nurture teams, Work in diverse teams across the globe, Hire engineers and conduct job interviews
-                  </p>
-                  <p>
-                    <span class="name">
-                        <strong>
-                          Tech skills:
-                        </strong>
-                    </span>
-                      Building distributed systems, JIRA, Confluence, git, CI/CD, Orchestration at scale: Ansible, Puppet, cloud-init, In-depth Linux knowledge: kernel, packages, scripting, network, security, etc, Containerization with Docker, k18s, Java, C++, Python, Bash, Databases: Postgres, Mysql/Mariadb, Oracle, AWS
-                  </p>
-              </div>
-            </div>
-          </section>
-
-
         
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Work  Experience
-                          <p>2019 to Present</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>Head of AnyLogic 9 &amp; Cloud Development:</strong>
-                        </p>
-                        <p>Manage a combined team of 20 developers, QA and DevOps engineers. Defining and perfecting product roadmaps in line with company business strategies.</p>
-                          <p class="highlight">Introduced an inter-project Gantt chart planning system to best deliver goals and a short-cycle feedback to stakeholders</p>
-                          <p class="highlight">Hired brilliant engineers and consolidated the team to improve development efficiency. Nurtured several developers into teams leaders</p>
-                          <p class="highlight">Instituted automated CI/CD cycle, bringing development and testing closer to production.</p>
-                          <p class="highlight">Redefined code quality, infrastructure, and business values of the Anylogic Cloud product, greatly improving customer acknowledgment and market success.</p>
-                    </div>
-                  </div>
-                </section>
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>2013 to 2019</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>Senior Software Engineer:</strong>
-                        </p>
-                        <p>Performed Services development and architecture design of a distributed data storage system in Java and C++, including high-load performance-oriented block level network IO service.</p>
-                          <p class="highlight">Worked with Linux kernel in matters of block IO, networking, and security. Delivered simple patches for the file system driver.</p>
-                          <p class="highlight">Supported a low-level service in C, working with hard drives via SATA and SMART to mitigate disk health issues.</p>
-                          <p class="highlight">Maintained two internal Linux distributions – created services, packages, managed configuration, installation, recovery, etc.</p>
-                          <p class="highlight">Solved a huge amount of customer escalations working on-call shifts in collaboration with Support team.</p>
-                          <p class="highlight">Created and co-authored multiple software patents.</p>
-                    </div>
-                  </div>
-                </section>
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>2006 to 2013</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>Head of System Administration Team:</strong>
-                        </p>
-                          <p class="highlight">Built a comprehensive tech stack from scratch, including internal banking software, databases, and a huge variety of infrastructure services with a backbone built solely on Linux.</p>
-                          <p class="highlight">Implemented an inexpensive and redundant HA virtualization cluster solution.</p>
-                          <p class="highlight">Developed a terminal server for thin client workstations focused on cost-efficiency and security.</p>
-                          <p class="highlight">Raised a team of System Engineers, polished internal work processes – user access management, system administration, backup and disaster recovery.</p>
-                          <p class="highlight">Minimized downtime of all services, crafted a state-of-art solution that worked flawlessly for many years and passed multiple government audits.</p>
-                    </div>
-                  </div>
-                </section>
+        
+          <div class="col-sm-6">
+            <strong>Phone</strong>
+            <div class="phone">+79811248428</div>
+          </div>
+        
+        
+      </div>
+    </div>
+  </section>
 
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Education
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p style="margin-top:0;" class="heading">University of Management Technologies and Economics</p>
-                        <p class="highlight">
-                          Specialist:
-                          <i>Finance and Credit </i>
-                        </p>
-                    </div>
-                  </div>
-                </section>
+
+    <!-- About -->
+    
+
+
+  <section id="about" class="row">
+    <aside class="col-sm-3">
+      <h3>About</h3>
+    </aside>
+    <div class="col-sm-9">
+      <p>Very brilliant QA team lead and engineer&#39;s summary goes here</p>
+    </div>
+  </section>
+
+
+    <!-- Profiles -->
+    
 
 
 
+    <!-- Work -->
+    
+
+
+  <section id="work" class="row">
+    <aside class="col-sm-3">
+      <h3>Work</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>AnyLogic</span>
+              <span class="date">
+                October 2019 — Now
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href="https://the.anylogic.company">https://the.anylogic.company</a>
+            </div>
+            <div class="position">
+              Head of QA Team
+            </div>
+            <div class="summary">
+              <p></p>
+            </div>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>ALM Works</span>
+              <span class="date">
+                July 2018 — October 2019
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href="https://www.almworks.com">https://www.almworks.com</a>
+            </div>
+            <div class="position">
+              QA Engineer
+            </div>
+            <div class="summary">
+              <p></p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</li>
+                
+                  <li class="bullet">Analysis and test design for functionalities under test</li>
+                
+                  <li class="bullet">Working with bugs: localization, creating bug reports, verification of fixes</li>
+                
+                  <li class="bullet">Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</li>
+                
+                  <li class="bullet">Working in SCRUM team</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>AnyLogic</span>
+              <span class="date">
+                August 2014 — July 2018
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href="http://the.anylogic.company">http://the.anylogic.company</a>
+            </div>
+            <div class="position">
+              QA Engineer
+            </div>
+            <div class="summary">
+              <p></p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Test planning, creating check-lists</li>
+                
+                  <li class="bullet">Manual testing of new functionality, regression testing</li>
+                
+                  <li class="bullet">Web application and desktop simulation modelling IDE testing</li>
+                
+                  <li class="bullet">Communication with developer team</li>
+                
+                  <li class="bullet">Participation in making of tasks list for the next release</li>
+                
+                  <li class="bullet">Introduced and maintained the testing process in the project (was solely responsible for all test activities)</li>
+                
+                  <li class="bullet">Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</li>
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Skills -->
+    
+
+
+  <section id="skills" class="row">
+    <aside class="col-sm-3">
+      <h3>Skills</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Testing</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>Test Design</li>
+                
+                  <li>Test Plans</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Technical Skills</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>git</li>
+                
+                  <li>Java</li>
+                
+                  <li>Python</li>
+                
+                  <li>Jira</li>
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Education -->
+    
+
+
+  <section id="education" class="row">
+    <aside class="col-sm-3">
+      <h3>Education</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>St. Petersburg State University, Saint Petersburg</span>
+              <span class="date">
+                 — January 2012
+              </span>
+            </h4>
+            <div class="area">Statistical Modelling, Applied Mathematics and Informatics</div>
+            <div class="studyType">
+              
+              
+            </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Certifications -->
+    
 
 
 
-            <!-- PROFILES -->
+    <!-- Awards -->
+    
 
 
-        </div>
-    </article>
+
+
+    <!-- Volunteer -->
+    
+
+
+
+    <!-- Publications -->
+    
+
+
+
+    <!-- Languages -->
+    
+
+
+
+    <!-- Interests -->
+    
+
+
+
+    <!-- References -->
+    
+
+
+
   </div>
 </body>
 </html>

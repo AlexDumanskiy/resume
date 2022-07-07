@@ -9,7 +9,7 @@ on:
     branches: [ main ]
 
 env:
-  PDF_FILE: 'AlexDumanskiy.pdf'
+  PDF_FILE: 'MariaDumanskaya.pdf'
 
 jobs:
   check_run:
@@ -26,14 +26,14 @@ jobs:
       - uses: AlexDumanskiy/action-jsonresume-export@c666d7a7c9ff499af97c1a1ba962f06e6263f95d
         name: Export resume as HTML
         with:
-          theme: paper
+          theme: rocketspacer
           resume_filepath: resume.json
           output_format: html
           output_filepath: docs/index.html
       - uses: AlexDumanskiy/action-jsonresume-export@c666d7a7c9ff499af97c1a1ba962f06e6263f95d
         name: Export resume as PDF
         with:
-          theme: paper
+          theme: rocketspacer
           resume_filepath: resume.json
           output_format: pdf
           output_filepath: docs/${{ env.PDF_FILE }}
