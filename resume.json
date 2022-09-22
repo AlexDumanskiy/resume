@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Alexander Dumanskiy",
-    "label": "Engineering Manager",
+    "label": "Senior Software Engineer",
     "image": "",
     "email": "a.dumanskiy@hotmail.com",
     "phone": "+79219145977",
     "url": "",
-    "summary": "Fifteen years in the tech industry sharpening my software development, leadership, and people management skills at market leading companies. Proven track record of defining and delivering exceptional products in dynamic environments while maintaining close stakeholder participation.",
+    "summary": "Fifteen years in the tech industry sharpening my software development, leadership, and people management skills at market leading companies. I possess a broad experience in coding, scripting, administration, DevOps, and leadership, staying open-mind for upcoming challenges.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -84,22 +84,41 @@
       "level": "",
       "keywords": [
         "Lead and nurture teams",
+        "Long and short term panning",
         "Work in diverse teams across the globe",
         "Hire engineers and conduct job interviews"
       ]
     },
     {
-      "name": "Tech skills",
+      "name": "Coding",
       "level": "",
       "keywords": [
-        "Building distributed systems",
-        "JIRA, Confluence, git, CI/CD",
+        "Distributed Systems",
+        "Java, C++, Python, Bash",
+        "Spring: Boot, MVC, Security",
+        "Databases: Postgres, Mysql/Mariadb, Oracle",
+        "Hibernate"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": [
+        "JIRA, Confluence, git, CI/CD: gitlab, github",
         "Orchestration at scale: Ansible, Puppet, cloud-init",
         "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc",
         "Containerization with Docker, k18s",
-        "Java, C++, Python, Bash",
-        "Databases: Postgres, Mysql/Mariadb, Oracle",
         "AWS"
+      ]
+    },
+    {
+      "name": "Other",
+      "level": "",
+      "keywords": [
+        "Creating projects from scratch",
+        "Working with legacy code",
+        "Passion for learning new technologies",
+        "Result-oriented attitude"
       ]
     }
   ],
