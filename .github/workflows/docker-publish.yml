@@ -51,7 +51,6 @@ jobs:
             echo ::set-output name=exit_code::1
           fi
       - name: Commit published PDF
-        if: ${{ github.event_name != 'pull_request' }}
         id: commit-pdf
         run: |
           git config --local user.email "action@github.com"
@@ -65,7 +64,7 @@ jobs:
           fi
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: ${{ (steps.commit-html.outputs.exit_code == 0 || steps.commit-pdf.outputs.exit_code == 0) && ( github.event_name != 'pull_request' ) }}
+        if: ${{ (steps.commit-html.outputs.exit_code == 0 || steps.commit-pdf.outputs.exit_code == 0) }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
