@@ -2,11 +2,11 @@ name: resume
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, developer ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, developer ]
 
 env:
   PDF_FILE: 'AlexDumanskiy.pdf'
