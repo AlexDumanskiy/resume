@@ -80,23 +80,13 @@
   "publications": [],
   "skills": [
     {
-      "name": "Leadership",
-      "level": "",
-      "keywords": [
-        "Lead and nurture teams",
-        "Long and short term panning",
-        "Work in diverse teams across the globe",
-        "Hire engineers and conduct job interviews"
-      ]
-    },
-    {
       "name": "Coding",
       "level": "",
       "keywords": [
         "Distributed Systems",
         "Java, C++, Python, Bash",
-        "Spring: Boot, MVC, Security",
-        "Databases: Postgres, Mysql/Mariadb, Oracle",
+        "Spring: Boot, MVC, Security;",
+        "Databases: Postgres, Mysql/Mariadb, Oracle;",
         "Hibernate"
       ]
     },
@@ -105,10 +95,20 @@
       "level": "",
       "keywords": [
         "JIRA, Confluence, git, CI/CD: gitlab, github",
-        "Orchestration at scale: Ansible, Puppet, cloud-init",
-        "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc",
+        "Orchestration at scale: Ansible, Puppet, cloud-init;",
+        "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc;",
         "Containerization with Docker, k18s",
         "AWS"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "level": "",
+      "keywords": [
+        "Lead and nurture teams",
+        "Long and short term panning",
+        "Work in diverse teams across the globe",
+        "Hire engineers and conduct job interviews"
       ]
     },
     {
