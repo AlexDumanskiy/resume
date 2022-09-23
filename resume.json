@@ -7,13 +7,6 @@
     "email": "a.dumanskiy@hotmail.com",
     "url": "",
     "summary": "Fifteen years in the tech industry sharpening my software development, leadership, and people management skills at market leading companies. I possess a broad experience in coding, scripting, administration, DevOps, and leadership, staying open-mind for upcoming challenges.",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "St.Petersburg",
-      "countryCode": "",
-      "region": "Russia"
-    },
     "profiles": []
   },
   "work": [
@@ -95,11 +88,12 @@
       "name": "DevOps",
       "level": "",
       "keywords": [
-        "JIRA, Confluence, git, CI/CD: gitlab, github",
+        "CI/CD: gitlab, github",
         "Orchestration at scale: Ansible, Puppet, cloud-init;",
-        "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc;",
         "Containerization with Docker, k18s",
-        "AWS"
+        "Terraform, Packer",
+        "AWS",
+        "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc;"
       ]
     },
     {
