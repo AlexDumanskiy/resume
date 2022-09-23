@@ -86,7 +86,8 @@
         "Distributed Systems",
         "Java, C++, Python, Bash",
         "Spring: Boot, MVC, Security;",
-        "Databases: Postgres, Mysql/Mariadb, Oracle;",
+        "Databases: Postgres, Mysql/Mariadb, Oracle, Cassandra;",
+        "RabbitMQ",
         "Hibernate"
       ]
     },
