@@ -18,11 +18,13 @@
       "endDate": "",
       "summary": "Manage a combined team of 20 developers, QA and DevOps engineers. Defining and perfecting product roadmaps in line with company business strategies.",
       "highlights": [
+        "Instituted automated CI/CD cycle, bringing development and testing closer to production.",
+        "Managed a versatile AWS-based infrastructure across multiple regions utilizing ES2, S3, Route53, and other Amazon service.",
+        "Implemented loads of new features and bugfixes. Shipped new code and performed complex on-going refactoring of a legacy codebase.",
+        "Provided daily assistance to team members in terms of Linux expertise, shell scripting, internal (GitHub, JIRA, Confluence, etc.) services management.",
         "Redefined code quality, infrastructure, and business values of the AnyLogic Cloud product, greatly improving customer acknowledgment and market success.",
         "Introduced an inter-project Gantt chart planning system to best deliver goals and a short-cycle feedback to stakeholders.",
-        "Hired brilliant engineers and consolidated the team to improve development efficiency. Nurtured several developers into teams leaders.",
-        "Instituted automated CI/CD cycle, bringing development and testing closer to production.",
-        "Implemented loads of new features and bugfixes. Shipped new code and performed complex on-going refactoring of a legacy codebase."
+        "Hired brilliant engineers and consolidated the team to improve development efficiency. Nurtured several developers into teams leaders."
       ]
     },
     {
@@ -31,7 +33,7 @@
       "url": "https://www.dell.com",
       "startDate": "2013",
       "endDate": "2019",
-      "summary": "Performed Services development and architecture design of a fault-tolerant distributed data storage system in Java and C++, including high-load performance-oriented block level network IO service.",
+      "summary": "Supported multiple complex internal build systems. Introduced Docker, containerized build and deploy staged. Performed design and development of a fault-tolerant distributed data storage system services in Java and C++, including high-load performance-oriented block level network IO service.",
       "highlights": [
         "Worked with Linux kernel in matters of block IO, networking, and security. Delivered simple patches for the file system driver.",
         "Supported a low-level service in C, working with hard drives via SATA and SMART to mitigate disk health issues.",
@@ -74,6 +76,19 @@
   "publications": [],
   "skills": [
     {
+      "name": "DevOps",
+      "level": "",
+      "keywords": [
+        "CI/CD: GitLab, GiHhub",
+        "Orchestration: Ansible, Puppet, cloud-init;",
+        "Containerization: Docker, k18s",
+        "IaC: Terraform, Packer;",
+        "AWS",
+        "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc;",
+        "OS: Debian/Ubuntu, RedHat/CentOS, Gentoo, CoreOS, Solaris, Windows Server"
+      ]
+    },
+    {
       "name": "Coding",
       "level": "",
       "keywords": [
@@ -83,18 +98,6 @@
         "Databases: Postgres, Mysql/Mariadb, Oracle, Cassandra;",
         "RabbitMQ",
         "Hibernate"
-      ]
-    },
-    {
-      "name": "DevOps",
-      "level": "",
-      "keywords": [
-        "CI/CD: gitlab, github",
-        "Orchestration at scale: Ansible, Puppet, cloud-init;",
-        "Containerization with Docker, k18s",
-        "Terraform, Packer",
-        "AWS",
-        "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc;"
       ]
     },
     {
