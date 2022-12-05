@@ -33,7 +33,7 @@
       "url": "https://www.dell.com",
       "startDate": "2013",
       "endDate": "2019",
-      "summary": "Supported multiple complex internal build systems. Introduced Docker, containerized build and deploy staged. Performed design and development of a fault-tolerant distributed data storage system services in Java and C++, including high-load performance-oriented block level network IO service.",
+      "summary": "Supported multiple complex internal build systems. Introduced Docker into our project, containerized build and deploy staged. Performed design and development of a fault-tolerant distributed data storage system services in Java and C++, including high-load performance-oriented block level network IO service.",
       "highlights": [
         "Worked with Linux kernel in matters of block IO, networking, and security. Delivered simple patches for the file system driver.",
         "Supported a low-level service in C, working with hard drives via SATA and SMART to mitigate disk health issues.",
@@ -81,7 +81,7 @@
       "keywords": [
         "CI/CD: GitLab, GiHhub",
         "Orchestration: Ansible, Puppet, cloud-init;",
-        "Containerization: Docker, k18s",
+        "Containerization: Docker, Compose, k18s",
         "IaC: Terraform, Packer;",
         "AWS",
         "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc;",
