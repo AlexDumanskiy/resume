@@ -85,7 +85,7 @@
         "IaC: Terraform, Packer;",
         "AWS",
         "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc;",
-        "OS: Debian/Ubuntu, RedHat/CentOS, Gentoo, CoreOS, Solaris, Windows Server"
+        "OS: Debian/Ubuntu, RedHat/CentOS, Gentoo, SLES, CoreOS, Solaris, Windows Server"
       ]
     },
     {
