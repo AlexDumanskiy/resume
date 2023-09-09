@@ -12,6 +12,7 @@
   "work": [
     {
       "name": "AnyLogic",
+      "company": "AnyLogic",
       "position": "Head of AnyLogic 9 & Cloud Development",
       "url": "https://the.anylogic.company",
       "startDate": "2019",
@@ -26,6 +27,7 @@
     },
     {
       "name": "DELL EMC",
+      "company": "DELL EMC",
       "position": "Senior Software Engineer",
       "url": "https://www.dell.com",
       "startDate": "2013",
@@ -41,6 +43,7 @@
     },
     {
       "name": "JSCB Ruscobank",
+      "company": "JSCB Ruscobank",
       "position": "Head of System Administration Team",
       "url": "http://ruscobank.ru",
       "startDate": "2006",
