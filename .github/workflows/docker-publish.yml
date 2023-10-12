@@ -30,7 +30,7 @@ jobs:
           resume_filepath: resume.json
           output_format: html
           output_filepath: docs/index.html
-      - uses: AlexDumanskiy/action-jsonresume-export@v4
+      - uses: AlexDumanskiy/action-jsonresume-export@v5
         name: Export resume as PDF
         with:
           theme: paper
